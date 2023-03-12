@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Sami BEN ELHAJ SALAH"
   avatar           : "photo.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Software Engineer at ONERA (French Aerospace Lab)"
   location         : "Paris"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/sami-ben-elhaj-salah/"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
