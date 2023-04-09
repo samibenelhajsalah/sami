@@ -17,7 +17,7 @@ About Me
 
 <video width="500px" height="500px"
         controls="controls"/>
-        <source src="man-coding-on-laptop.mp4"
+        <source src="../images/man-coding-on-laptop.mp4"
             type="video/mp4">
     </video>
 
