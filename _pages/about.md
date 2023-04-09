@@ -13,7 +13,14 @@ About Me
 
 <p style="text-align: justify;">I hold a doctorate degree (PhD) from the University of Poitiers. I am passionate about software developement and mathematics. I possess an experience and  a deep understanding of object-oriented programming and algorithms. I can apply this knowledge to create robust and efficient applications through my skills in C++ and Python. I have a strong background in statistics, mathematics, and artificial intelligence. Through my skills in machine learning, I can develop algorithms and models to solve complex problems. I  have a strong desire to create innovative solutions, explore new technologies, and push the boundaries. I am highly collaborative and enjoy working in interdisciplinary teams, with a focus on clear communication and effective project challenge</p>
 
- <img src="../images/developerActivity.svg" alt="Mon SVG Bonnes nouvelles" />
+<div style="text-align: center;">
+<img src="../images/developerActivity.svg" alt="Mon SVG Bonnes nouvelles" width="400" height="400"/>
+</div>
+
+<!-- <div style="text-align: center;"> 
+<img src="../images/screen.gif" alt="Mon SVG Bonnes nouvelles" width="300" height="300" />
+</div>
+-->
 
 <!--
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
