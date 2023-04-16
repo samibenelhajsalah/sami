@@ -90,3 +90,6 @@ redirect_from:
     </form>
   </body>
 </html>
+
+## Locations of key files/directories 
+
