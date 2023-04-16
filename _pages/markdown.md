@@ -1,12 +1,12 @@
 ---
 permalink: /markdown/
-# title: "Markdown"
+title: "Markdown"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
-<!-- <div class="mb-3"> 
+<div class="mb-3"> 
       <form name="contact" method="POST" action="https://formspree.io/f/xwkjwjzl">
         <div class="form-group form-inline">
           <label class="sr-only" for="inputName">Name</label>
@@ -23,7 +23,7 @@ redirect_from:
         <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
       </form>
 </div>
--->
+
 <html>
   <head>
     <title>Formulaire de Contact</title>
@@ -90,6 +90,4 @@ redirect_from:
     </form>
   </body>
 </html>
-
-## Locations of key files/directories 
 
