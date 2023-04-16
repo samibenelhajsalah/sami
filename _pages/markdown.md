@@ -1,6 +1,6 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+# title: "Markdown"
 author_profile: true
 redirect_from: 
   - /md/
@@ -24,7 +24,6 @@ redirect_from:
       </form>
 </div>
 -->
-<!DOCTYPE html>
 <html>
   <head>
     <title>Formulaire de Contact</title>
@@ -91,7 +90,7 @@ redirect_from:
     </form>
   </body>
 </html>
-<!-- ## Locations of key files/directories 
+## Locations of key files/directories 
 * Basic config options: _config.yml
 * Top navigation bar config: _data/navigation.yml
 * Single pages: _pages/
@@ -221,4 +220,3 @@ Getting our science styling on with H<sub>2</sub>O, which should push the "2" do
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
 ### Variable Tag
 This allows you to denote <var>variables</var>.
--->
