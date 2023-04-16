@@ -74,7 +74,7 @@ redirect_from:
           <label class="sr-only" for="inputMessage">Message</label>
           <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
         </div>
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="Send">
       </form>
 </div>
 
