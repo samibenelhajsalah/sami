@@ -6,7 +6,7 @@ redirect_from:
   - /md/
   - /markdown.html
 ---
-<div class="mb-3">
+<!-- <div class="mb-3"> 
       <form name="contact" method="POST" action="https://formspree.io/f/xwkjwjzl">
         <div class="form-group form-inline">
           <label class="sr-only" for="inputName">Name</label>
@@ -23,8 +23,75 @@ redirect_from:
         <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
       </form>
 </div>
-## Locations of key files/directories
-
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulaire de Contact</title>
+    <style>
+      /* Styles pour le formulaire */
+      form {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      /* Styles pour la page */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <form name="contact" method="POST" action="https://formspree.io/f/xwkjwjzl">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
+<!-- ## Locations of key files/directories 
 * Basic config options: _config.yml
 * Top navigation bar config: _data/navigation.yml
 * Single pages: _pages/
@@ -37,47 +104,31 @@ redirect_from:
 * Footer: _includes/footer.html
 * Static files (like PDFs): /files/
 * Profile image (can set in _config.yml): images/profile.png
-
 ## Tips and hints
-
 * Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
 * Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
   * Green check: successful build
   * Orange circle: building
   * Red X: error
   * No icon: not built
-
 ## Resources
  * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
-
 ## Markdown guide
-
 ### Header three
-
 #### Header four
-
 ##### Header five
-
 ###### Header six
-
 ## Blockquotes
-
 Single line blockquote:
-
 > Quotes are cool.
-
 ## Tables
-
 ### Table 1
-
 | Entry            | Item   |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
 | [John Doe](#)    | 2016   | Description of the item in the list                          |
 | [Jane Doe](#)    | 2019   | Description of the item in the list                          |
 | [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
 ### Table 2
-
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -87,23 +138,16 @@ Single line blockquote:
 | cell4   | cell5   | cell6   |
 |=============================|
 | Foot1   | Foot2   | Foot3   |
-
 ## Definition Lists
-
 Definition List Title
 :   Definition list division.
-
 Startup
 :   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
 #dowork
 :   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
 Do It Live
 :   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
 ## Unordered Lists (Nested)
-
   * List item one 
       * List item one 
           * List item one
@@ -116,9 +160,7 @@ Do It Live
   * List item two
   * List item three
   * List item four
-
 ## Ordered List (Nested)
-
   1. List item one 
       1. List item one 
           1. List item one
@@ -131,62 +173,35 @@ Do It Live
   2. List item two
   3. List item three
   4. List item four
-
 ## Buttons
-
 Make any link standout more when applying the `.btn` class.
-
 ## Notices
-
 **Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
 {: .notice}
-
 ## HTML Tags
-
 ### Address Tag
-
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
-
 ### Anchor Tag (aka. Link)
-
 This is an example of a [link](http://github.com "Github").
-
 ### Abbreviation Tag
-
 The abbreviation CSS stands for "Cascading Style Sheets".
-
 *[CSS]: Cascading Style Sheets
-
 ### Cite Tag
-
 "Code is poetry." ---<cite>Automattic</cite>
-
 ### Code Tag
-
 You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
 ### Strike Tag
-
 This tag will let you <strike>strikeout text</strike>.
-
 ### Emphasize Tag
-
 The emphasize tag should _italicize_ text.
-
 ### Insert Tag
-
 This tag should denote <ins>inserted</ins> text.
-
 ### Keyboard Tag
-
 This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
 ### Preformatted Tag
-
 This tag styles large blocks of code.
-
 <pre>
 .post-title {
   margin: 0 0 5px;
@@ -196,23 +211,14 @@ This tag styles large blocks of code.
   and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
 }
 </pre>
-
 ### Quote Tag
-
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
 ### Strong Tag
-
 This tag shows **bold text**.
-
 ### Subscript Tag
-
 Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
 ### Superscript Tag
-
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
 ### Variable Tag
-
 This allows you to denote <var>variables</var>.
+-->
