@@ -7,7 +7,7 @@ redirect_from:
   - /markdown.html
 ---
 <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/sami [dot] bhs [dot] 91 [at] gmail [dot] com">
+      <form name="contact" method="POST" action="https://formspree.io/f/xwkjwjzl">
         <div class="form-group form-inline">
           <label class="sr-only" for="inputName">Name</label>
           <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
