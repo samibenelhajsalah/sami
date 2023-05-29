@@ -4,6 +4,7 @@ title: "CONTACT ME"
 author_profile: true
 redirect_from: 
   - /md/
+  - /html/
   - /markdown.html
 ---
 <html>
