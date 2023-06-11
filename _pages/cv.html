@@ -102,6 +102,10 @@ table tr:last-child p {
     border: none;
   }
 
+  .justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 </style>
 </head>
@@ -152,7 +156,7 @@ table tr:last-child p {
             <a href="https://www.mpq.univ-paris-diderot.fr/?Filippo-Vicentini">Filippo</a> will give a talk about
             <i>"NeuralQuantum.jl: Approaching Quantum Physics with Neural Networks".</i>
             <a href="https://github.com/PhilipVinc/NeuralQuantum.jl">[Github]</a>
-            <div>
+            <div class="justify">
               The state of an open quantum system is completely determined by its density matrix, which evolves according to a specific equation called the Lindblad master equation.
               When the system is composed of many interacting particles, the exponential complexity arising from the many-body problem makes it impossible to simulate.
               We recently developed a novel approach to the problem, combining the representative power of neural networks with approximate optimization schemes based on Markov-chain sampling.
