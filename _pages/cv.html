@@ -89,6 +89,13 @@ table tr:last-child p {
       border: none;
 }
 
+
+.no-border td,
+.no-border th {
+    border: none;
+}
+
+
 </style>
 </head>
 <body>
@@ -156,8 +163,9 @@ table tr:last-child p {
       </div>
     </br>
     <hr>
-    
-    <table class="no-border">
+
+  <table class="no-border">
+   <tbody>
       <tr>
          <td>Donnée 1</td>
          <td>Donnée 2</td>
@@ -166,7 +174,8 @@ table tr:last-child p {
          <td>Donnée 3</td>
          <td>Donnée 4</td>
       </tr>
-   </table>
+   </tbody>
+  </table>
 
 </body>
 </html>
