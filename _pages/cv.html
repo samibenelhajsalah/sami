@@ -12,152 +12,80 @@ redirect_from:
 {% include base_path %}
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <meta http-equiv="x-ua-compatible" content="ie=edge">
-     <link href="main.css" rel="stylesheet">
-    <title>
-      Julia Paris Meetup
-    </title>
-  </head>
-  <body>
-    <div id="site">
-      <div class="title">
-          <img width="400" alt="Julia Paris Meetup" src="paris-meetup.svg"/>
-      </div>
-      <div>
-        <br>
-        <br>
-        <p>
-          Welcome to the official page of Julia Paris Meetup!
-          This meetup aims at promoting the <a href="https://julialang.org">Julia</a> programming language in Paris, France.
-          <br>
-          <br>
-          All people are welcome!
+<html>
+<head>
+  <title>My CV</title>
+  <style>
+    #site {
+    max-width: 830px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 2.5em auto 2em;
+    padding: 0 1.5em;
+}
 
-      </div>
-      </br>
-      <hr>
-      <h3> Next meetup </h3>
-      <div>
-        <table><tbody>
-        <tr><th><b>03.12.2019</br></th>
-            <td>
-              <b>Location:</b> <a href="https://www.artelys.com">Artelys</a> (81 rue Saint Lazare, 75009, Paris)</br>
-              <i>
-              Please fill-in <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHt3aB81E8qAFVuR6wo8YejLSPjGjW_q_qWveQ9-d5xom0SQ/viewform?vc=0&c=0&w=1">this form</a> to register to the event.
-              </i></br>
-              <b>Schedule:</b> 19h </br>
-              <b>Topics:</b>
-              <p>
-                <a href="https://www.mpq.univ-paris-diderot.fr/?Filippo-Vicentini">Filippo</a> will give a talk about
-                <i>"NeuralQuantum.jl: Approaching Quantum Physics with Neural Networks".</i>
-                 <a href="https://github.com/PhilipVinc/NeuralQuantum.jl">[Github]</a>
-                <div class="summary">
-                  The state of an open quantum system is completely determined by its density matrix, which evolves according to a specific equation called the Lindblad master equation.
-                  When the system is composed by many interacting particles, the exponential complexity arising from the many-body problem makes it impossible to simulate.
-                  We recently developed a novel approach to the problem, combining the representative power of neural networks with approximate optimization schemes based on Markov-chain sampling.
-                  Unfortunately, the algorithm that emerged is somewhat different from traditional machine-learning problems, and it has been hard to exploit existing frameworks.
-                  During this talk we will detail some key concepts of this novel research direction and how Julia dispatch system empowered us to rapidly iterate on several prototypes during our research.
-                </div>
-              </p>
-                <p>
-                <a href="http://antoine.levitt.fr/">Antoine</a> will give a talk about
-                  <i>"Optimization on manifolds".</i>
-                <div class="summary">
-                  I will briefly present the theory of optimization algorithms on manifolds, and share my experiences implementing this functionality in Optim.jl.
-                </div>
-              </p>
+.title {
+    text-align: center;
+    padding-bottom: 5px;
+}
 
-            </td>
-          </tr>
-          </tbody></table>
-      </div>
+body {
+    font-family: Georgia, 'PT Serif', serif;
+}
 
-      </br>
-      <hr>
-      <h3> Past meetups </h3>
-      <div>
-        <table><tbody>
-        <tr><th><b>17.10.2019</br></th>
-            <td>
-              <b>Location:</b> <a href=https://quantstack.net/index.html>QuantStack</a> (27 Rue du Chemin Vert 75011, Paris)</br>
-              <b>Schedule:</b> 19h </br>
-              <b>Topics:</b>
-              <p>
-                <a href="https://github.com/mfherbst">Michael</a> gave a talk
-                about <i>"Electronic-structure simulations using Julia"</i>.
-                <div class="summary">
-                  Computational studies of electronic structures,
-                  that is the modelling of electrons in materials and chemical compounds,
-                  is now a standard procedure in industry and research
-                  and crucial for progress in material science,
-                  chemical manufacturing or pharmacy.
-                  Recently we have developed
-                  the <a href="https://github.com/mfherbst/DFTK.jl"
-                  style="font-family:monospace">DFTK.jl</a> package,
-                  a Julia implementation
-                  of plane-wave density-functional theory,
-                  one common simulation method in the field.
-                  This talk will focus on the rationale for employing
-                  Julia for this task and illustrates our design
-                  within the Julia ecosystem.
-                  It will discuss the suitability of Julia
-                  for this interdisciplinary research field
-                  and our strategy to integrate with interesting
-                  Julia developments such as automatic differentiation,
-                  GPU acceleration and deviating numerical precision.
-                </div>
-                <div class="slides">
-                  <a href="slides/2019.10.17_DFTK_MichaelHerbst.pdf"
-                     target="_blank"></a>
-                </div>
-              </p>
-              <p>
-                <a href="https://github.com/ffevotte">François</a> gave a
-                talk about <i>"Accurate and Efficiently Vectorized Sums and Dot
-                  Products in Julia"</i>.
-                <div class="summary">
-                  This talk will present how basic algorithmic blocks such as
-                  sums or dot products can be implemented in Julia (and have
-                  been developed
-                  in <a href="https://github.com/JuliaMath/AccurateArithmetic.jl"
-                  style="font-family:monospace">AccurateArithmetic.jl</a>) in a
-                  way that is both accurate and efficient. Besides naive
-                  algorithms, compensated algorithms are implemented, which
-                  effectively double the working precision, producing much more
-                  accurate results while incurring little to no overhead,
-                  especially for large input vectors. Although the vectorization
-                  of such algorithms is no particularly simple task, Julia makes
-                  it relatively easy and straightforward. This talk will
-                  illustrate how Julia can help efficiently mix
-                  Floating-Point-related concerns with SIMD-related constraints
-                  in order to get the performance of double-precision
-                  state-of-the-art BLAS libraries and the accuracy of
-                  quadruple-precision algorithms.
-                </div>
-                <div class="slides">
-                  <a href="slides/2019.10.17_AccurateArithmetic_FrancoisFevotte.pdf"
-                     target="_blank"></a>
-                </div>
-              </p>
-            </td>
-          </tr>
-          </tbody></table>
-      </div>
+th {
+    vertical-align: top;
+}
 
-      <hr>
-      <div id="sponsors">
-        <h3>Sponsors</h3>
-        <a href="https://quantstack.net/"><img alt="QuantStack" src="https://quantstack.net/img/logo.svg"></a>
-        <a href="https://triscale-innov.com/"><img alt="TriScale innov" src="https://triscale-innov.com/images/triscale_couleur.png"></a>
-      </div>
-    </div>
-  </body>
-</html>
-<!-- <body> 
+td {
+    padding-left: 20px;
+}
+
+table p:first-child {
+    margin-top:0px;
+}
+
+table tr:last-child p {
+    margin-bottom:0px;
+}
+
+.summary {
+    font-size: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.summary, .slides {
+    padding-left: 2em;
+    vertical-align: middle;
+}
+
+.slides a:before {
+    display: inline-block;
+    width: 1.22em;
+    height: 1.5em;
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg");
+    background-size: 1.22em 1.5em;
+}
+
+.slides a:after {
+    content: " Download the slides";
+}
+
+#soutiens {
+    text-align: center;
+}
+
+#sponsors img {
+    margin: 1em;
+    max-width: 7em;
+    max-height: 3.5em;
+    vertical-align: middle;
+}
+  </style>
+</head>
+<body>
   <div class="section">
     <h2>Education</h2>
     <p>Bachelor of Science, Computer Science</p>
@@ -185,7 +113,7 @@ redirect_from:
     </ul>
   </div>
 </body>
-</html>-->
+</html>
 
 
 <!-- 
