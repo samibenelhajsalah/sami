@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Sami BEN ELHAJ SALAH"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Sami BEN ELHAJ SALAH"
 description              : &description "personal description"
 url                      : https://samibenelhajsalah.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
