@@ -1,16 +1,104 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Skills and presentations"
 permalink: /talks/
 author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Scientific Computing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
 
-{% endif %}
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .skill {
+  width: calc(25% - 5px);
+  margin-bottom: 20px;
+  margin-right: -5px;
+}
+
+    .skill img {
+  	display: block;
+  	margin: 0 auto 10px;
+  	object-fit: contain;
+  	border-radius: 0%;
+}
+
+    .skill-name {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>What I USE</h1>
+
+    <div class="category">
+      <h2>Informatique</h2>
+      <div class="skills">
+        <div class="skill">
+          <img src="boost.png" alt="Image 4" width="150px" height="100px">
+          <div class="skill-name">C++</div>
+        </div>
+        <div class="skill">
+          <img src="ISO_C++_Logo.svg.png" alt="Image 4" width="70px" height="100px">
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="skill">
+          <img src="docker.png" alt="Image 4" width="100px" height="100px">
+          <div class="skill-name">Docker</div>
+        </div>
+        <div class="skill">
+          <img src="cmake.png" alt="Image 4" width="110px" height="100px">
+          <div class="skill-name">Docker</div>
+        </div>
+        <div class="skill">
+          <img src="docker.png" alt="Image 4" width="100px" height="100px">
+          <div class="skill-name">Git</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+    
