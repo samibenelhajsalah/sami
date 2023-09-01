@@ -34,7 +34,6 @@ redirect_from:
     <div class="skills-container" id="skills-container">
         <!-- Les compétences seront insérées ici -->
     </div>
-
     <script>
         // Le JSON avec les compétences
         const skillsData = {
@@ -58,7 +57,6 @@ redirect_from:
                 },
             ]
         };
-
         // Fonction pour créer le contenu HTML des compétences
         function createSkillElements(skillCategory) {
             const skillsContainer = document.getElementById('skills-container');
@@ -82,10 +80,8 @@ redirect_from:
             categoryDiv.appendChild(skillsDiv);
             skillsContainer.appendChild(categoryDiv);
         }
-
         // Appel de la fonction pour générer le contenu
         skillsData.skills_categories.forEach(createSkillElements);
-
     </script>
 </body>
 </html>
