@@ -37,6 +37,15 @@ redirect_from:
   </div>
 
   <script>
+        // Créez et ajoutez les images à la page
+        const imageContainer = document.getElementById("image-container");
+    imageSources.forEach(source => {
+      const image = document.createElement("img");
+      image.src = source;
+      image.alt = "Image";
+      image.className = "image";
+      imageContainer.appendChild(image);
+    });
     // Chemins vers les images
     const imageSources = [
       "C.svg",
@@ -45,15 +54,7 @@ redirect_from:
       "C.svg"
     ];
 
-    // Créez et ajoutez les images à la page
-    const imageContainer = document.getElementById("image-container");
-    imageSources.forEach(source => {
-      const image = document.createElement("img");
-      image.src = source;
-      image.alt = "Image";
-      image.className = "image";
-      imageContainer.appendChild(image);
-    });
+
   </script>
 </body>
 </html>
