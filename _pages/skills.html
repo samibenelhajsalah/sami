@@ -16,46 +16,251 @@ redirect_from:
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Compétences</title>
+  <title>My CV</title>
   <style>
-    /* Ajoutez du CSS pour le style des images ici */
+    #site {
+    max-width: 830px;
+    text-align: left;
+    line-height: 1.5em;
+    margin: 2.5em auto 2em;
+    padding: 0 1.5em;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+body {
+    font-family: Georgia, 'PT Serif', serif;
+}
+
+th {
+    vertical-align: top;
+}
+
+td {
+    padding-left: 20px;
+}
+
+table p:first-child {
+    margin-top:0px;
+}
+
+table tr:last-child p {
+    margin-bottom:0px;
+}
+
+.summary {
+    font-size: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.summary, .slides {
+    padding-left: 2em;
+    vertical-align: middle;
+}
+
+.slides a:before {
+    display: inline-block;
+    width: 1.22em;
+    height: 1.5em;
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg");
+    background-size: 1.22em 1.5em;
+}
+
+.slides a:after {
+    content: " Download the slides";
+}
+
+#soutiens {
+    text-align: center;
+}
+
+#sponsors img {
+    margin: 1em;
+    max-width: 7em;
+    max-height: 3.5em;
+    vertical-align: middle;
+}
+
+.no-border {
+      border-collapse: collapse;
+      border: none;
+}
+
+
+.no-border td,
+.no-border th {
+    border: none;
+   }
+
+ 
+  .no-border table,
+  .no-border th,
+  .no-border td {
+    border: none;
+  }
+
+  .justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+    .container {
+  max-width: 50%;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  /* box-sizing: border-box; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: flex-end;
+  /* les images sont alignees en bas */
+}
+
+    .skill {
+  width: calc(25% - 5px);
+  margin-bottom: 20px;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+
+    .skill img {
+  	display: block;
+  	margin: 0 auto 10px;
+  	object-fit: contain;
+  	border-radius: 0%;
+  }
+
+    .skill-name {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .italic {
+        font-style: italic;
+        text-align: center;
+        font-size: 28px;
+        text-decoration: underline; /* Ajout du soulignement */
+    }
     .image-container {
-      display: flex;
-      justify-content: center;
-    }
-    .image {
-      margin: 10px;
-      max-width: 100px;
-      max-height: 100px;
-    }
-  </style>
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  margin: 15px;
+}
+
+</style>
 </head>
 <body>
-  <h1>Ajouter une Image</h1>
+  <!-- <div class="section">
+    <h2>Education</h2>
+    <p>Bachelor of Science, Computer Science</p>
+    <p>XYZ University, 2015-2019</p>
+  </div>
+  
+  <div class="section">
+    <h2>Experience</h2>
+    <p>Software Developer, ABC Company</p>
+    <p>2019-present</p>
+    <ul>
+      <li>Developed web applications using HTML, CSS, and JavaScript</li>
+      <li>Collaborated with cross-functional teams to deliver high-quality software</li>
+      <li>Implemented new features and enhancements to existing systems</li>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming languages: Java, Python, JavaScript</li>
+      <li>Web development: HTML, CSS, JavaScript, React</li>
+      <li>Database management: SQL, MongoDB</li>
+      <li>Version control: Git, SVN</li>
+    </ul>
+  </div>-->
 
-  <button id="ajouterImageBtn">Ajouter une Image</button>
-  <div id="conteneurImages"></div>
-
-  <script>
-      // Fonction pour ajouter une image
-      function ajouterImage() {
-          const conteneurImages = document.getElementById("conteneurImages");
-          
-          // Créez un élément image
-          const nouvelleImage = document.createElement("img");
-
-          // Définissez le chemin de l'image et l'attribut alt
-          nouvelleImage.src = "C.svg";
-          nouvelleImage.alt = "Image ajoutée";
-
-          // Ajoutez la nouvelle image au conteneur
-          conteneurImages.appendChild(nouvelleImage);
-      }
-
-      // Ajoutez un écouteur d'événement pour le bouton
-      const boutonAjouterImage = document.getElementById("ajouterImageBtn");
-      boutonAjouterImage.addEventListener("click", ajouterImage);
-  </script>
+  <div style="text-align: center;">
+    <img src="../images/developerActivity.svg" alt="Mon SVG Bonnes nouvelles" width="400" height="400"/>
+    </div>
+    <hr>
+<h3>Next meetup</h3>
+<div class="no-border">
+  <table>
+    <tbody>
+      <tr>
+        <th><b>03.12.2019</b></th>
+        <td>
+          <b>Location:</b> <a href="https://www.artelys.com">Artelys</a> (81 rue Saint Lazare, 75009, Paris)<br>
+          <i>Please fill-in <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHt3aB81E8qAFVuR6wo8YejLSPjGjW_q_qWveQ9-d5xom0SQ/viewform?vc=0&c=0&w=1">this form</a> to register to the event.</i><br>
+          <b>Schedule:</b> 19h <br>
+          <b>Topics:</b>
+          <p>
+            <a href="https://www.mpq.univ-paris-diderot.fr/?Filippo-Vicentini">Filippo</a> will give a talk about
+            <i>"NeuralQuantum.jl: Approaching Quantum Physics with Neural Networks".</i>
+            <a href="https://github.com/PhilipVinc/NeuralQuantum.jl">[Github]</a>
+            <div class="justify">
+              The state of an open quantum system is completely determined by its density matrix, which evolves according to a specific equation called the Lindblad master equation.
+              When the system is composed of many interacting particles, the exponential complexity arising from the many-body problem makes it impossible to simulate.
+              We recently developed a novel approach to the problem, combining the representative power of neural networks with approximate optimization schemes based on Markov-chain sampling.
+              Unfortunately, the algorithm that emerged is somewhat different from traditional machine-learning problems, and it has been hard to exploit existing frameworks.
+              During this talk, we will detail some key concepts of this novel research direction and how Julia's dispatch system empowered us to rapidly iterate on several prototypes during our research.
+            </div>
+          </p>
+          <p>
+            <a href="http://antoine.levitt.fr/">Antoine</a> will give a talk about
+            <i>"Optimization on manifolds".</i>
+            <div class="summary">
+              I will briefly present the theory of optimization algorithms on manifolds and share my experiences implementing this functionality in Optim.jl.
+            </div>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<div class="image-container">
+  <img src="../images/docker.png" alt="Image 1" width="60px" height="60px">
+  <img src="../images/ISO_C++_Logo.svg.png" alt="Image 2" width="60px" height="60px">
+  <img src="../images/Git-logo.svg.png" alt="Image 3" width="80px" height="70px">
+  <img src="../images/cmake-ar21.svg" alt="Image 4" width="90px" height="90px">
+</div>
+<div class="image-container">
+  <img src="../images/docker.png" alt="Image 1" width="60px" height="60px">
+  <img src="../images/ISO_C++_Logo.svg.png" alt="Image 2" width="60px" height="60px">
+  <img src="../images/Git-logo.svg.png" alt="Image 3" width="40px" height="40px">
+  <img src="../images/cmake-ar21.svg" alt="Image 4" width="90px" height="90px">
+</div>
 </body>
 </html>
 
