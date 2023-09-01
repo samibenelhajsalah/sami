@@ -31,30 +31,30 @@ redirect_from:
   </style>
 </head>
 <body>
-  <h1>Images Alignées</h1>
- 
+  <h1>Ajouter une Image</h1>
+
+  <button id="ajouterImageBtn">Ajouter une Image</button>
+  <div id="conteneurImages"></div>
 
   <script>
-    // Chemins vers les images
-    const imageSources = [
-      "C.svg",
-      "C.svg",
-      "C.svg",
-      "C.svg"
-    ];
+      // Fonction pour ajouter une image
+      function ajouterImage() {
+          const conteneurImages = document.getElementById("conteneurImages");
+          
+          // Créez un élément image
+          const nouvelleImage = document.createElement("img");
 
-    // Créez et ajoutez les images à la page
-    const imageContainer = document.getElementById("image-container");
-    imageSources.forEach(source => {
-      const image = document.createElement("img");
-      image.src = source;
-      image.alt = "Image";
-      image.className = "image";
-      imageContainer.appendChild(image);
-    });
-    <div class="image-container" id="image-container">
-    <!-- Les images seront insérées ici via JavaScript -->
-  </div>
+          // Définissez le chemin de l'image et l'attribut alt
+          nouvelleImage.src = "C.svg";
+          nouvelleImage.alt = "Image ajoutée";
+
+          // Ajoutez la nouvelle image au conteneur
+          conteneurImages.appendChild(nouvelleImage);
+      }
+
+      // Ajoutez un écouteur d'événement pour le bouton
+      const boutonAjouterImage = document.getElementById("ajouterImageBtn");
+      boutonAjouterImage.addEventListener("click", ajouterImage);
   </script>
 </body>
 </html>
