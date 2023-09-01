@@ -17,33 +17,43 @@ redirect_from:
 <html>
 <head>
   <title>Compétences</title>
-    <style>
-        /* Ajoutez du CSS pour le style élégant ici */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skill {
-            margin: 10px;
-            text-align: center;
-        }
-    </style>
+  <style>
+    /* Ajoutez du CSS pour le style des images ici */
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+    .image {
+      margin: 10px;
+      max-width: 100px;
+      max-height: 100px;
+    }
+  </style>
 </head>
 <body>
-  <p>Cliquez sur le bouton pour appeler la fonction !</p>
-  <button onclick="maFonction()">Appel</button>
-  <p id="demo"></p>
+  <h1>Images Alignées</h1>
+  <div class="image-container" id="image-container">
+    <!-- Les images seront insérées ici via JavaScript -->
+  </div>
+
   <script>
-  function maFonction()
-  {
-  var personne;
-  personne = prompt("Entrez votre nom", "Toto");
-  if (personne != null)
-  {
-  document.getElementById("demo").innerHTML =
-  "Bonjour, " + personne + " !";
-  }
-  }
+    // Chemins vers les images
+    const imageSources = [
+      "C.svg",
+      "C.svg",
+      "C.svg",
+      "C.svg"
+    ];
+
+    // Créez et ajoutez les images à la page
+    const imageContainer = document.getElementById("image-container");
+    imageSources.forEach(source => {
+      const image = document.createElement("img");
+      image.src = source;
+      image.alt = "Image";
+      image.className = "image";
+      imageContainer.appendChild(image);
+    });
   </script>
 </body>
 </html>
