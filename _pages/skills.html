@@ -30,50 +30,21 @@ redirect_from:
     </style>
 </head>
 <body>
+  <p>Cliquez sur le bouton pour appeler la fonction !</p>
+  <button onclick="maFonction()">Appel</button>
+  <p id="demo"></p>
   <script>
-    // Le JSON avec les compétences
-    const skillsData = {
-        "skills_categories": [
-            {
-                "name": "Software Development",
-                "skills": [
-                    {
-                        "name": "C",
-                        "logo": "C.svg",
-                        "link": "https://en.wikipedia.org/wiki/C_(programming_language)"
-                    },                    
-                ]
-            },
-        ]
-    };
-
-    // Fonction pour créer le contenu HTML des compétences
-    function createSkillElements(skillCategory) {
-        const skillsContainer = document.getElementById('skills-container');
-        const categoryDiv = document.createElement('div');
-        categoryDiv.innerHTML = `<h2>${skillCategory.name}</h2>`;
-        
-        const skillsDiv = document.createElement('div');
-        skillsDiv.className = 'skills-container';
-
-        skillCategory.skills.forEach(skill => {
-            const skillDiv = document.createElement('div');
-            skillDiv.className = 'skill';
-            skillDiv.innerHTML = `
-                <img src="${skill.logo}" alt="${skill.name}">
-                <p>${skill.name}</p>
-                <a href="${skill.link}" target="_blank">En savoir plus</a>
-            `;
-            skillsDiv.appendChild(skillDiv);
-        });
-
-        categoryDiv.appendChild(skillsDiv);
-        skillsContainer.appendChild(categoryDiv);
-    }
-
-    // Appel de la fonction pour générer le contenu
+  function maFonction()
+  {
+  var personne;
+  personne = prompt("Entrez votre nom", "Toto");
+  if (personne != null)
+  {
+  document.getElementById("demo").innerHTML =
+  "Bonjour, " + personne + " !";
+  }
+  }
   </script>
-  skillsData.skills_categories.forEach(createSkillElements);
 </body>
 </html>
 
