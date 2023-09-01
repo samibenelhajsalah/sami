@@ -32,20 +32,9 @@ redirect_from:
 </head>
 <body>
   <h1>Images Alignées</h1>
-  <div class="image-container" id="image-container">
-    <!-- Les images seront insérées ici via JavaScript -->
-  </div>
+ 
 
   <script>
-        // Créez et ajoutez les images à la page
-        const imageContainer = document.getElementById("image-container");
-    imageSources.forEach(source => {
-      const image = document.createElement("img");
-      image.src = source;
-      image.alt = "Image";
-      image.className = "image";
-      imageContainer.appendChild(image);
-    });
     // Chemins vers les images
     const imageSources = [
       "C.svg",
@@ -54,7 +43,18 @@ redirect_from:
       "C.svg"
     ];
 
-
+    // Créez et ajoutez les images à la page
+    const imageContainer = document.getElementById("image-container");
+    imageSources.forEach(source => {
+      const image = document.createElement("img");
+      image.src = source;
+      image.alt = "Image";
+      image.className = "image";
+      imageContainer.appendChild(image);
+    });
+    <div class="image-container" id="image-container">
+    <!-- Les images seront insérées ici via JavaScript -->
+  </div>
   </script>
 </body>
 </html>
